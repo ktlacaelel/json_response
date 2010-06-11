@@ -1,4 +1,6 @@
-require 'activesupport'
+require 'rubygems'
+require 'json'
+require 'json/pure'
 
 class JsonResponse
 
