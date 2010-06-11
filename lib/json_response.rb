@@ -1,3 +1,5 @@
+require 'activesupport'
+
 class JsonResponse
 
   attr_reader :status

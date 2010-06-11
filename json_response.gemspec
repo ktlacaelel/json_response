@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "json_response.gemspec",
      "lib/json_response.rb",
      "test/helper.rb",
      "test/test_json_response.rb"
