@@ -4,10 +4,11 @@ class JsonResponse
 
   def initialize
     @status = false
+    @data = {}
   end
 
   def serialize
-    { :status => @status }.to_json
+    { :status => @status, :data => @data }.to_json
   end
 
   def to_js(callback)
@@ -20,6 +21,10 @@ class JsonResponse
 
   def negative
     @status = false
+  end
+
+  def append(key, value)
+    @data[key] = value
   end
 
 end
